@@ -1,5 +1,8 @@
 package com.boot.model;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Shipwreck {
 	Long id;
 	String name;

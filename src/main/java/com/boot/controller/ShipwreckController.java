@@ -1,7 +1,7 @@
 package com.boot.controller;
 
 import com.boot.model.Shipwreck;
-import com.boot.repository.ShipwreckRepository;
+import com.boot.repository.IShipwreckRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +13,7 @@ import java.util.List;
 public class ShipwreckController {
 
     @Autowired
-    private ShipwreckRepository shipwreckRepository;
+    private IShipwreckRepository shipwreckRepository;
 
     @RequestMapping(value = "shipwrecks", method = RequestMethod.GET)
     public List<Shipwreck> list() {
